@@ -1,17 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import LazyLoad from 'react-lazyload';
+import Welcome from './components/Welcome'
+import About from './components/About'
+import Portfolio from './components/Portfolio'
+import Blog from './components/Blog'
 
-import App from '../src/routes/App';
+// import App from '../src/routes/App';
 
+const App = () => {
+    return (
+      <div className="list">
+        <LazyLoad >
+            <Welcome />
+        </LazyLoad>
+        <LazyLoad >
+            <About />
+        </LazyLoad>
+        <LazyLoad >
+            <Portfolio />
+        </LazyLoad>    
+        <LazyLoad>
+            <Blog />
+        </LazyLoad>  
+      </div>
+    );
+  };
 
-
-
-// El Provider se utiliza para que la información que está en store, se mande como estado a toda la aplicación y esté disponible para conectarse a ella mediante "connect"
 ReactDOM.render
 (
-        <App />,
-
+    <App />,
     document.getElementById('app')
 
 );

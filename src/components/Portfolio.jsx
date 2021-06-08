@@ -2,16 +2,16 @@ import React from 'react'
 
 const Portfolio = () => (
     <section className="flex" id="portfolio">
-        <div className="header waypoint" data-animation="slide-in-right">
+        <div className="header wayp" data-animation="slide-in-right">
         PROJECTS
         </div>
         <div
-        className="header-bar waypoint"
+        className="header-bar wayp"
         data-animation="slide-in-right"
         data-delay=".3s"
         ></div>
 
-        <div className="filter-wrap waypoint" data-animation="fade-in">
+        <div className="filter-wrap wayp" data-animation="fade-in">
         <div className="flex row">
             <div className="filter" data-filter="all">ALL</div>
             <div className="filter" data-filter=".rails">RUBY/RAILS</div>
@@ -28,7 +28,7 @@ const Portfolio = () => (
         </div>
         </div>
 
-        <div id="gallery" className="container flex row wrap waypoint">
+        <div id="gallery" className="container flex row wrap wayp">
         <div className="mix react" data-my-order="1">
             <div>
             <div className="card"></div>
