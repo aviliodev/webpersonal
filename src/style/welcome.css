@@ -11,7 +11,7 @@
     src: url("../fonts/Raleway-Bold.ttf");
   }
   
-a {
+  a {
     color: inherit;
     text-decoration: none;
   }
@@ -31,9 +31,9 @@ a {
     display: none;
   }
   
-  /* .page-link {
+  .page-link {
     cursor: pointer;
-  } */
+  }
   
   .disable-hover {
     pointer-events: none;
@@ -54,26 +54,28 @@ a {
   
   .button {
     border: 2px solid #fff;
-    box-sizing: inherit;
+    /* box-sizing: inherit; */
     cursor: pointer;
     display: inline-block;
     font-size: 13pt;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     transition: all 0.5s;
+
   }
-  .button:hover {
+  /* .button:hover {
     background-color: #04c2c9;
     border-color: #04c2c9;
   }
+
   .button .mdi {
     vertical-align: middle;
   }
-  
+   */
   .bold {
     font-family: "Raleway-bold";
   }
 
-.flex {
+  .flex {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -84,6 +86,10 @@ a {
   }
   .flex.wrap {
     flex-wrap: wrap;
+  }
+
+  .highlight { /* este remarca en rosa el nombre del programador en Welcome*/
+    color: #e31b6d;
   }
 
 
@@ -123,16 +129,36 @@ section {
     transform: rotate(540deg);
   }
   section:nth-of-type(1) .button {
-    margin-bottom: 53px;
-    padding: 12px 40px 12px 15px;
+    /* margin-bottom: 53px; */
+    /* padding: 12px 40px 12px 15px; */
     position: relative;
   }
   section:nth-of-type(1) .button .mdi {
-    position: absolute;
-    right: 15px;
-    top: 11px;
-    transition: transform 0.3s;
+    /* position: relative; */
+    /* right: 0px; */
+    /* top: 3px; */
+    /* transition: transform 0.3s; */
   }
+  
   section:nth-of-type(1) .button:hover .mdi {
     transform: rotate(90deg);
+  }
+
+  @media screen and (min-width: 600px) {
+    section:nth-of-type(1) .text {
+      font-size: 32pt;
+      line-height: 36pt;
+    }
+    section:nth-of-type(1) .button {
+      /* padding: 12px 50px 12px 20px; */
+    }
+    section:nth-of-type(1) .button .mdi {
+      /* top: 16px; */
+    }
+  }
+
+  @media screen and (min-width: 960px) {
+    .button {
+      font-size: 16pt;
+    }
   }

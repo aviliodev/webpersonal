@@ -1,7 +1,9 @@
 import React from 'react'
-// import '../style/style.css'
+
+import '../fonts/mdi/css/materialdesignicons.css'
+import '../fonts/mdi/css/materialdesignicons.min.css'
 import '../style/welcome.css'
-// import '../style/menu.css'
+
 
 const Welcome = () => (
     <section id="home" className="flex height-fix">
