@@ -1,6 +1,5 @@
 import React from 'react'
-import '../style/animations.css'
-import '../style/style.css'
+
 
 const About = () => {
     
@@ -87,7 +86,7 @@ const About = () => {
                 </div>
             </div>
         </div>
-{/* DE AQUI PARA ABJO FALTA */}
+
         <div className="skills-wrapper flex row-gt-sm">
             <div className="flex flex-50-gt-sm way slide-in-left">
                 <img src="../img/me.png" className="me" alt="asaber"/>
@@ -185,6 +184,17 @@ const About = () => {
             </div>
         </div>
         </div>
+
+        {/* <nav className="flex">
+            <div className="link-wrap">
+                <div className="active page-link" dest="home">home</div>
+                <div className="page-link" dest="about">about</div>
+                <div className="page-link" dest="portfolio">portfolio</div>
+                <div className="page-link" dest="blog">blog</div>
+                <div className="page-link" dest="contact">contact</div>
+            </div>
+            <i className="mdi mdi-menu"></i>
+        </nav> */}
     </section>   
     )
 }

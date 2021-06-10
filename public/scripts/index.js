@@ -16,9 +16,9 @@ $(function() {
   }
 
   // RESIZE RESETS
-  $(window).resize(function() {
-    posFilterBar($('.filter').first());
-  });
+  // $(window).resize(function() {
+  //   posFilterBar($('.filter').first());
+  // });
 
   // Sticky Nav on Mobile
   if (isMobile) {
@@ -37,6 +37,7 @@ $(function() {
     var pos2 = pos + 50;
     var scrollBottom = pos + $(window).height();
 
+    //Esta parte hace que el menu se mueva mientras nos movemos por la página
     if (!isMobile) {
       if (pos >= navPos + $('nav').height() && lastPos < pos) {
         $('nav').addClass('fixed');
@@ -47,7 +48,7 @@ $(function() {
       lastPos = pos;
     }
 
-    // Link Highlighting
+    // Link Highlighting: pone en rosa las secciones del menu seleccionadas
     if (pos2 > $('#home').offset().top) {
       highlightLink('home');
     }
@@ -68,16 +69,17 @@ $(function() {
     }
 
     // Prevent Hover on Scroll
-    clearTimeout(lockTimer);
-    if (!$('body').hasClass('disable-hover')) {
-      $('body').addClass('disable-hover');
-    }
+    // clearTimeout(lockTimer);
+    // if (!$('body').hasClass('disable-hover')) {
+    //   $('body').addClass('disable-hover');
+    // }
 
-    lockTimer = setTimeout(function() {
-      $('body').removeClass('disable-hover');
-    }, 500);
+    // lockTimer = setTimeout(function() {
+    //   $('body').removeClass('disable-hover');
+    // }, 500);
   });
 
+  //Esta partecita hace que se quite el color rosa cuando se selecciona otra seccion del menu
   function highlightLink(anchor) {
     $('nav .active').removeClass('active');
     $('nav')
@@ -85,7 +87,7 @@ $(function() {
       .addClass('active');
   }
 
-  // EVENT HANDLERS
+  // EVENT HANDLERS: esta sección se mueve por las secciones al hacer clic en el menu
   $('.page-link').click(function() {
     var anchor = $(this).attr('dest');
     $('.link-wrap').removeClass('visible');
@@ -103,28 +105,29 @@ $(function() {
     );
   });
 
-  $('.mdi-menu').click(function() {
-    $('.link-wrap').toggleClass('visible');
-  });
+  // $('.mdi-menu').click(function() {
+  //   $('.link-wrap').toggleClass('visible');
+  // });
 
-  $('.blog-wrap').hover(
-    function() {
-      $('.blog-wrap')
-        .not(this)
-        .addClass('fade');
-      $(this).addClass('hover');
-    },
-    function() {
-      $(this).removeClass('hover');
-      $('.blog-wrap').removeClass('fade');
-    }
-  );
+  // $('.blog-wrap').hover(
+  //   function() {
+  //     $('.blog-wrap')
+  //       .not(this)
+  //       .addClass('fade');
+  //     $(this).addClass('hover');
+  //   },
+  //   function() {
+  //     $(this).removeClass('hover');
+  //     $('.blog-wrap').removeClass('fade');
+  //   }
+  // );
 
+  //PORTAFOLIO: esta seccion sirve para filtrar los proyectos del portafolio
   posFilterBar($('.filter').first());
 
-  $('.filter').click(function() {
-    posFilterBar(this);
-  });
+  // $('.filter').click(function() {
+  //   posFilterBar(this);
+  // });
 
   function posFilterBar(elem) {
     var origin = $(elem)
@@ -141,63 +144,63 @@ $(function() {
   // GALLERY
   $('#gallery').mixItUp({});
 
-  function mixClear() {
-    setTimeout(function() {
-      $('#gallery').removeClass('waypoint');
-    }, 2000);
-  }
+  // function mixClear() {
+  //   setTimeout(function() {
+  //     $('#gallery').removeClass('waypoint');
+  //   }, 2000);
+  // }
 
   // SCROLL ANIMATIONS
-  function onScrollInit(items, elemTrigger) {
-    var offset = $(window).height() / 1.6;
-    items.each(function() {
-      var elem = $(this),
-        animationClass = elem.attr('data-animation'),
-        animationDelay = elem.attr('data-delay');
+  // function onScrollInit(items, elemTrigger) {
+  //   var offset = $(window).height() / 1.6;
+  //   items.each(function() {
+  //     var elem = $(this),
+  //       animationClass = elem.attr('data-animation'),
+  //       animationDelay = elem.attr('data-delay');
 
-      elem.css({
-        '-webkit-animation-delay': animationDelay,
-        '-moz-animation-delay': animationDelay,
-        'animation-delay': animationDelay
-      });
+  //     elem.css({
+  //       '-webkit-animation-delay': animationDelay,
+  //       '-moz-animation-delay': animationDelay,
+  //       'animation-delay': animationDelay
+  //     });
 
-      var trigger = elemTrigger ? trigger : elem;
+  //     var trigger = elemTrigger ? trigger : elem;
 
-      trigger.waypoint(
-        function() {
-          elem.addClass('animated').addClass(animationClass);
-          if (elem.get(0).id === 'gallery') mixClear(); //OPTIONAL
-        },
-        {
-          triggerOnce: true,
-          offset: offset
-        }
-      );
-    });
-  }
+  //     trigger.waypoint(
+  //       function() {
+  //         elem.addClass('animated').addClass(animationClass);
+  //         if (elem.get(0).id === 'gallery') mixClear(); //OPTIONAL
+  //       },
+  //       {
+  //         triggerOnce: true,
+  //         offset: offset
+  //       }
+  //     );
+  //   });
+  // }
 
-  setTimeout(function() {
-    onScrollInit($('.waypoint'));
-  }, 10);
+  // setTimeout(function() {
+  //   onScrollInit($('.waypoint'));
+  // }, 10);
 
   // CONTACT FORM
-  $('#contact-form').submit(function(e) {
-    e.preventDefault();
+  // $('#contact-form').submit(function(e) {
+  //   e.preventDefault();
 
-    $.ajax({
-      url: 'https://formspree.io/mattwilliams85@gmail.com',
-      method: 'POST',
-      data: { message: $('form').serialize() },
-      dataType: 'json'
-    }).done(function(response) {
-      $('#success').addClass('expand');
-      $('#contact-form')
-        .find('input[type=text], input[type=email], textarea')
-        .val('');
-    });
-  });
+  //   $.ajax({
+  //     url: 'https://formspree.io/mattwilliams85@gmail.com',
+  //     method: 'POST',
+  //     data: { message: $('form').serialize() },
+  //     dataType: 'json'
+  //   }).done(function(response) {
+  //     $('#success').addClass('expand');
+  //     $('#contact-form')
+  //       .find('input[type=text], input[type=email], textarea')
+  //       .val('');
+  //   });
+  // });
 
-  $('#close').click(function() {
-    $('#success').removeClass('expand');
-  });
+  // $('#close').click(function() {
+  //   $('#success').removeClass('expand');
+  // });
 });

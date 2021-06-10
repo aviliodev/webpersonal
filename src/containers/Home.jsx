@@ -1,15 +1,17 @@
 import React from 'react'
-import LazyLoad from 'react-lazyload';
-// import mixitup from 'mixitup'
-// import '../scripts/index.js'
-import Welcome from '../components/Welcome'
+
+import '../style/style.css'
+import '../style/animations.css'
+import '../style/menu.css'
+
+import Menu from '../components/Menu'
 import About from '../components/About'
 import Portfolio from '../components/Portfolio'
 import Blog from '../components/Blog'
 
 const Home = () => (
     <>
-        <Welcome />
+        <Menu />
         <About />
         <Portfolio />
         <Blog />

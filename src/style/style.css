@@ -135,9 +135,9 @@ body {
   display: none;
 }
 
-.page-link {
+/* .page-link {
   cursor: pointer;
-}
+} */
 
 .disable-hover {
   pointer-events: none;
@@ -256,7 +256,7 @@ body {
   height: 100px;
 }
 
-nav {
+/* nav {
   bottom: 0;
   left: 0;
   position: absolute;
@@ -275,7 +275,7 @@ nav.fixed {
 }
 nav.fixed.desk {
   animation: popDown 0.5s;
-}
+} */
 /* nav .link-wrap {
   background: #333;
   height: 0;
@@ -302,17 +302,17 @@ nav.fixed.desk {
 /* nav .link-wrap div:hover {
   color: #e31b6d;
 } */
-nav .mdi-menu {
+/* nav .mdi-menu {
   font-size: 30pt;
   line-height: 36pt;
   margin: auto 0;
   position: absolute;
   right: 5vw;
   top: 0;
-}
-nav .active {
+} */
+/* nav .active {
   color: #e31b6d;
-}
+} */
 
 .carousel-wrap {
   height: 250px;
@@ -472,6 +472,7 @@ nav .active {
   opacity: 1;
 }
 
+/* :::::::::::ESTO CORRESPONDE A LA SECCIÓN DEL HOME:::::::::: */
 section {
   color: #616161;
   line-height: 11pt;
@@ -487,7 +488,8 @@ section .container {
 }
 section:nth-of-type(1) {
   color: #fff;
-  height: calc(100vh + 53px);
+  /* height: calc(100vh + 53px); */
+  height: 53px;
   padding: 0 10px;
 }
 section:nth-of-type(1) .highlight {
@@ -520,6 +522,7 @@ section:nth-of-type(1) .button .mdi {
 section:nth-of-type(1) .button:hover .mdi {
   transform: rotate(90deg);
 }
+/* :::::::::::::::::::::::::::FIN HOME:::::::::::::::::::::::::: */
 section:nth-of-type(2) .label-wrap .label {
   margin: 20px 0 10px 0;
 }
@@ -1057,7 +1060,7 @@ footer .footnote .highlight {
     left: 25px;
   }
 
-   nav .link-wrap {
+   /* nav .link-wrap {
     background: none;
     height: initial;
     overflow: visible;
@@ -1068,7 +1071,7 @@ footer .footnote .highlight {
     height: initial;
   }
   nav .link-wrap div {
-    display: inline; /* para que menu se mire como fila y no como culumna */
+    display: inline; para que menu se mire como fila y no como columna
     font-size: initial;
     margin: 0 20px;
     padding: initial;
@@ -1078,7 +1081,7 @@ footer .footnote .highlight {
   }
   nav .mdi-menu {
     display: none;
-  }
+  } */
 
   section {
     line-height: 18pt;
