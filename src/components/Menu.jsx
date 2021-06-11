@@ -4,20 +4,7 @@ import React from 'react'
 
 const Welcome = () => (
 
-    <section id="home5" className="flex5 height-fix5">
-
-         {/* <div id="pt" className="canvas"></div>
-        <div className="flex">
-            <div className="text">
-                Hello, I'm <span className="highlight">Avilio Amador</span>.
-                <br />
-                I'm a full-stack web developer.
-            </div>
-
-            <div className="button page-link" dest="about">
-                View my work <i className="mdi mdi-arrow-right"></i>
-            </div>
-        </div> */}
+    <section id="menu" className="flex5 height-fix5">
         <nav className="flex">
             <div className="link-wrap">
                 <div className="active page-link" dest="home">home</div>

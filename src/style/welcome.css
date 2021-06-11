@@ -1,4 +1,4 @@
-@font-face {
+  @font-face {
     font-family: "Raleway";
     src: url("../fonts/Raleway-Regular.ttf");
   }
@@ -54,11 +54,9 @@
   
   .button {
     border: 2px solid #fff;
-    /* box-sizing: inherit; */
     cursor: pointer;
     display: inline-block;
     font-size: 13pt;
-    /* padding: 10px 20px; */
     transition: all 0.5s;
 
   }
@@ -105,7 +103,7 @@ section {
     max-width: 1200px;
     padding: 0 10px;
     width: 100%;
-  }
+   }
   section:nth-of-type(1) {
     color: #fff;
     height: 100vh;
@@ -132,41 +130,54 @@ section {
 
   section:nth-of-type(1) .button {
     margin-bottom: 53px;
-    padding: 12px 15px 12px 15px;
+    padding: 12px 30px 12px 15px;
     position: relative;
 
   }
 
-
   section:nth-of-type(1) .button .mdi {
-    /* position: relative; */
-    right: 0px;
-    top: 3px;
-    transition: transform 0.3s;
+    position: relative;
+    bottom: 10px;
+    left: 0px;
+    top: 0px;
+    transition: scale 1.7s;
+    transition: left 0.5s;
+  }
+
+  section:nth-of-type(1) .button .view {
+    transition: font-size 0.5s;
 
   }
   
   section:nth-of-type(1) .button:hover .mdi {
-    transform: rotate(90deg);
-
+    left: 25px;
+    transform: scale(1.5);
 
   }
 
-  @media screen and (min-width: 600px) {
+  section:nth-of-type(1) .button:hover .view {
+    font-size: 24px;
+
+  } 
+
+   @media screen and (min-width: 600px) {
     section:nth-of-type(1) .text {
       font-size: 32pt;
       line-height: 36pt;
     }
-    section:nth-of-type(1) .button { /*con este cambio las dimensiones del boton del Welcome cuando al pantalla es de más de 600px de ancho*/
-      padding: 12px 20px 12px 20px;
+    section:nth-of-type(1) .button { /*con este, cambio las dimensiones del boton del Welcome cuando al pantalla es de más de 600px de ancho*/
+      padding: 12px 35px 12px 20px;
     }
     section:nth-of-type(1) .button .mdi {
-      top: 16px;
+      top: 0px;
     }
-  }
+  } 
 
   @media screen and (min-width: 960px) {
     .button {
       font-size: 16pt;
+    }
+    .canvas {
+      background: #252934;
     }
   }

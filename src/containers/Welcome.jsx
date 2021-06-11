@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 import '../fonts/mdi/css/materialdesignicons.css'
 import '../fonts/mdi/css/materialdesignicons.min.css'
@@ -6,7 +7,7 @@ import '../style/welcome.css'
 
 
 const Welcome = () => (
-    <section id="home" className="flex height-fix">
+    <section id="welcome" className="flex height-fix">
         <div id="pt" className="canvas"></div>
         <div className="flex">
             <div className="text">
@@ -15,9 +16,12 @@ const Welcome = () => (
                 I'm a full-stack web developer.
             </div>
 
-            <div className="button page-link" dest="about">
-                View my work <i className="mdi mdi-arrow-right"></i>
-            </div>
+            <Link to="Home">
+                <div className="button page-link" dest="about">
+                    <a className="view">View my work</a> 
+                    <i className="mdi mdi-arrow-right"></i>
+                </div>
+            </Link>
         </div>  
     </section>
  
