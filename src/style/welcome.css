@@ -62,7 +62,7 @@
     transition: all 0.5s;
 
   }
-  /* .button:hover {
+  .button:hover {
     background-color: #04c2c9;
     border-color: #04c2c9;
   }
@@ -70,7 +70,7 @@
   .button .mdi {
     vertical-align: middle;
   }
-   */
+  
   .bold {
     font-family: "Raleway-bold";
   }
@@ -127,21 +127,29 @@ section {
   }
   section:nth-of-type(1) .hexagon:hover {
     transform: rotate(540deg);
+
   }
+
   section:nth-of-type(1) .button {
-    /* margin-bottom: 53px; */
-    /* padding: 12px 40px 12px 15px; */
+    margin-bottom: 53px;
+    padding: 12px 15px 12px 15px;
     position: relative;
+
   }
+
+
   section:nth-of-type(1) .button .mdi {
     /* position: relative; */
-    /* right: 0px; */
-    /* top: 3px; */
-    /* transition: transform 0.3s; */
+    right: 0px;
+    top: 3px;
+    transition: transform 0.3s;
+
   }
   
   section:nth-of-type(1) .button:hover .mdi {
     transform: rotate(90deg);
+
+
   }
 
   @media screen and (min-width: 600px) {
@@ -149,11 +157,11 @@ section {
       font-size: 32pt;
       line-height: 36pt;
     }
-    section:nth-of-type(1) .button {
-      /* padding: 12px 50px 12px 20px; */
+    section:nth-of-type(1) .button { /*con este cambio las dimensiones del boton del Welcome cuando al pantalla es de más de 600px de ancho*/
+      padding: 12px 20px 12px 20px;
     }
     section:nth-of-type(1) .button .mdi {
-      /* top: 16px; */
+      top: 16px;
     }
   }
 
