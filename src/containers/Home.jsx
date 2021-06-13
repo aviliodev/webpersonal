@@ -2,7 +2,7 @@ import React from 'react'
 
 import '../style/style.css'
 import '../style/animations.css'
-import '../style/menu.css'
+
 
 import Menu from '../components/Menu'
 import About from '../components/About'
@@ -12,9 +12,9 @@ import Blog from '../components/Blog'
 const Home = () => (
     <>
         <Menu />
-        <About />
+        {/* <About /> */}
         <Portfolio />
-        <Blog />
+        {/* <Blog /> */}
     </>
 
 )

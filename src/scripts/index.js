@@ -16,9 +16,9 @@ $(function() {
   }
 
   // RESIZE RESETS
-  // $(window).resize(function() {
-  //   posFilterBar($('.filter').first());
-  // });
+  $(window).resize(function() {
+    posFilterBar($('.filter').first());
+  });
 
   // Sticky Nav on Mobile
   if (isMobile) {
@@ -69,14 +69,14 @@ $(function() {
     }
 
     // Prevent Hover on Scroll
-    // clearTimeout(lockTimer);
-    // if (!$('body').hasClass('disable-hover')) {
-    //   $('body').addClass('disable-hover');
-    // }
+    clearTimeout(lockTimer);
+    if (!$('body').hasClass('disable-hover')) {
+      $('body').addClass('disable-hover');
+    }
 
-    // lockTimer = setTimeout(function() {
-    //   $('body').removeClass('disable-hover');
-    // }, 500);
+    lockTimer = setTimeout(function() {
+      $('body').removeClass('disable-hover');
+    }, 500);
   });
 
   //Esta partecita hace que se quite el color rosa cuando se selecciona otra seccion del menu
@@ -105,29 +105,29 @@ $(function() {
     );
   });
 
-  // $('.mdi-menu').click(function() {
-  //   $('.link-wrap').toggleClass('visible');
-  // });
+  $('.mdi-menu').click(function() {
+    $('.link-wrap').toggleClass('visible');
+  });
 
-  // $('.blog-wrap').hover(
-  //   function() {
-  //     $('.blog-wrap')
-  //       .not(this)
-  //       .addClass('fade');
-  //     $(this).addClass('hover');
-  //   },
-  //   function() {
-  //     $(this).removeClass('hover');
-  //     $('.blog-wrap').removeClass('fade');
-  //   }
-  // );
+  $('.blog-wrap').hover(
+    function() {
+      $('.blog-wrap')
+        .not(this)
+        .addClass('fade');
+      $(this).addClass('hover');
+    },
+    function() {
+      $(this).removeClass('hover');
+      $('.blog-wrap').removeClass('fade');
+    }
+  );
 
   //PORTAFOLIO: esta seccion sirve para filtrar los proyectos del portafolio
   posFilterBar($('.filter').first());
 
-  // $('.filter').click(function() {
-  //   posFilterBar(this);
-  // });
+  $('.filter').click(function() {
+    posFilterBar(this);
+  });
 
   function posFilterBar(elem) {
     var origin = $(elem)
@@ -144,44 +144,44 @@ $(function() {
   // GALLERY
   $('#gallery').mixItUp({});
 
-  // function mixClear() {
-  //   setTimeout(function() {
-  //     $('#gallery').removeClass('waypoint');
-  //   }, 2000);
-  // }
+  function mixClear() {
+    setTimeout(function() {
+      $('#gallery').removeClass('waypoint');
+    }, 2000);
+  }
 
   // SCROLL ANIMATIONS
-  // function onScrollInit(items, elemTrigger) {
-  //   var offset = $(window).height() / 1.6;
-  //   items.each(function() {
-  //     var elem = $(this),
-  //       animationClass = elem.attr('data-animation'),
-  //       animationDelay = elem.attr('data-delay');
+  function onScrollInit(items, elemTrigger) {
+    var offset = $(window).height() / 1.6;
+    items.each(function() {
+      var elem = $(this),
+        animationClass = elem.attr('data-animation'),
+        animationDelay = elem.attr('data-delay');
 
-  //     elem.css({
-  //       '-webkit-animation-delay': animationDelay,
-  //       '-moz-animation-delay': animationDelay,
-  //       'animation-delay': animationDelay
-  //     });
+      elem.css({
+        '-webkit-animation-delay': animationDelay,
+        '-moz-animation-delay': animationDelay,
+        'animation-delay': animationDelay
+      });
 
-  //     var trigger = elemTrigger ? trigger : elem;
+      var trigger = elemTrigger ? trigger : elem;
 
-  //     trigger.waypoint(
-  //       function() {
-  //         elem.addClass('animated').addClass(animationClass);
-  //         if (elem.get(0).id === 'gallery') mixClear(); //OPTIONAL
-  //       },
-  //       {
-  //         triggerOnce: true,
-  //         offset: offset
-  //       }
-  //     );
-  //   });
-  // }
+      trigger.waypoint(
+        function() {
+          elem.addClass('animated').addClass(animationClass);
+          if (elem.get(0).id === 'gallery') mixClear(); //OPTIONAL
+        },
+        {
+          triggerOnce: true,
+          offset: offset
+        }
+      );
+    });
+  }
 
-  // setTimeout(function() {
-  //   onScrollInit($('.waypoint'));
-  // }, 10);
+  setTimeout(function() {
+    onScrollInit($('.waypoint'));
+  }, 10);
 
   // CONTACT FORM
   // $('#contact-form').submit(function(e) {

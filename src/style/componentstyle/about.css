@@ -27,32 +27,36 @@
     width: inherit;
   }
 
-section:nth-of-type(2) .label-wrap .label {
+  #about {
+    padding: 100px 0 130px 0;
+  }
+
+#about .label-wrap .label {
     margin: 20px 0 10px 0;
   }
-  section:nth-of-type(2) .bullet-wrap {
+  #about .bullet-wrap {
     height: 200px;
     justify-content: flex-start;
     padding: 0 7px;
   }
-  section:nth-of-type(2) .highlight {
+  #about .highlight {
     color: #009ada;
   }
-  section:nth-of-type(2) .up-arrow {
+  #about .up-arrow {
     height: 30px;
     margin: 15px 0;
   }
-  section:nth-of-type(2) .skills-wrapper {
+  #about .skills-wrapper {
     align-items: flex-start;
     width: 100%;
   }
-  section:nth-of-type(2) .skills-wrapper .me {
+  #about .skills-wrapper .me {
     height: 200px;
   }
-  section:nth-of-type(2) .skills-wrapper .label {
+  #about .skills-wrapper .label {
     margin: 20px 0 15px 0;
   }
-  section:nth-of-type(2) .hexagon i {
+  #about .hexagon i {
     color: #fff;
     font-size: 34pt;
     left: 0;
@@ -61,13 +65,13 @@ section:nth-of-type(2) .label-wrap .label {
     top: 20px;
     z-index: 1;
   }
-  section:nth-of-type(2) .bars-wrap {
+  #about .bars-wrap {
     margin: 50px auto 0 auto;
     max-width: 90%;
     width: calc(100% - 15px);
   }
 
-  section:nth-of-type(2) .bar {
+  #about .bar {
     align-items: flex-end;
     background-color: #eee;
     color: #666;
@@ -77,10 +81,10 @@ section:nth-of-type(2) .label-wrap .label {
     position: relative;
   }
 
-  section:nth-of-type(2) .bar span {
+  #about .bar span {
     display: none;
   }
-  section:nth-of-type(2) .bar.fill {
+  #about .bar.fill {
     left: 0;
     position: absolute;
     top: 0;
@@ -88,7 +92,7 @@ section:nth-of-type(2) .label-wrap .label {
     opacity: 1;
     padding: 0;
   }
-  section:nth-of-type(2) .bar .tag {
+  #about .bar .tag {
     left: 0;
     position: absolute;
     top: 0;
@@ -98,63 +102,66 @@ section:nth-of-type(2) .label-wrap .label {
     width: 110px;
     width: 70px;
   }
-  section:nth-of-type(2) .bar.secondary {
+  #about .bar.secondary {
     background-color: #c51675;
   }
-  section:nth-of-type(2) .bar.secondary .tag {
+  #about .bar.secondary .tag {
     background-color: #e31b6d;
   }
-  section:nth-of-type(2) .bar span {
+  #about .bar span {
     padding: 0 15px 0 0;
     z-index: 1;
   }
 
   @media screen and (min-width: 600px) {
-    section:nth-of-type(2) .label-wrap .label {
+    #about {
+      padding: 100px 0 130px 0; 
+    }
+    #about .label-wrap .label {
         margin: 15px 0 5px 0;
       }
-      section:nth-of-type(2) .label-wrap > div {
+      #about .label-wrap > div {
         padding: 0 15px;
       }
-      section:nth-of-type(2) .bullet-wrap {
+      #about .bullet-wrap {
         height: 230px;
       }
-      section:nth-of-type(2) .skills-wrapper > .flex:first-child {
+      #about .skills-wrapper > .flex:first-child {
         padding: 0 50px 0 50px;
       }
-      section:nth-of-type(2) .skills-wrapper .me {
+      #about .skills-wrapper .me {
         height: 250px;
       }
-      section:nth-of-type(2) .bar {
+      #about .bar {
         font-size: 11pt;
         height: 28px;
         margin: 0 0 15px 0;
       }
-      section:nth-of-type(2) .bar span {
+      #about .bar span {
         display: initial;
       }
-      section:nth-of-type(2) .bar .tag {
+      #about .bar .tag {
         width: 110px;
       }
-      section:nth-of-type(2) .hexagon i {
+      #about .hexagon i {
         font-size: 40pt;
       }
   }  
 
   @media screen and (min-width: 960px) {
-  section:nth-of-type(2) .bars-wrap {
+  #about .bars-wrap {
     margin: 0 0 0 0;
   }
-  section:nth-of-type(2) .skills-wrapper {
+  #about .skills-wrapper {
     margin: 50px 0 0 0;
   }
-  section:nth-of-type(2) .skills-wrapper .me {
+  #about .skills-wrapper .me {
     margin: 0;
   }
-  section:nth-of-type(2) .bar {
+  #about .bar {
     max-width: 90%;
   }
-  section:nth-of-type(2) .bullet-wrap {
+  #about .bullet-wrap {
     height: intial;
     margin: 0;
     padding: 0 10px;

@@ -61,7 +61,20 @@ nav .active {
   color: #e31b6d;
 }
 
+#menu {
+  color: rgb(218, 28, 28);
+  /*height: calc(100vh + 53px);*/
+  /* height: 53px; */
+
+    padding: 53px 0 130px 0; 
+
+}
+
 @media screen and (min-width: 600px) {
+
+  #menu {
+    padding: 0px 0 53px 0; 
+  }
   
    nav .link-wrap {
     background: none;

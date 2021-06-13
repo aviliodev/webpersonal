@@ -11,7 +11,7 @@
     src: url("../fonts/Raleway-Bold.ttf");
   }
   
-  a {
+  /* a {
     color: inherit;
     text-decoration: none;
   }
@@ -29,7 +29,7 @@
   
   #preload {
     display: none;
-  }
+  } */
   
   .page-link {
     cursor: pointer;
@@ -44,7 +44,7 @@
   }
   
   .canvas {
-    background: url("../img/filler.png") center center/cover;
+    background: url("../style/img/filler.png") center center/cover;
     height: 100%;
     left: 0;
     position: absolute;
@@ -52,7 +52,7 @@
     width: 100vw;
   }
   
-  .button {
+  /* .button {
     border: 2px solid #fff;
     cursor: pointer;
     display: inline-block;
@@ -67,9 +67,9 @@
 
   .button .mdi {
     vertical-align: middle;
-  }
+  } */
   
-  .bold {
+  /* .bold {
     font-family: "Raleway-bold";
   }
 
@@ -84,58 +84,44 @@
   }
   .flex.wrap {
     flex-wrap: wrap;
-  }
+  } */
 
-  .highlight { /* este remarca en rosa el nombre del programador en Welcome*/
+  /* .highlight { 
     color: #e31b6d;
-  }
+  } */
 
-
-section {
-    color: #616161;
-    line-height: 11pt;
-    padding: 70px 0 70px 0;
-    position: relative;
-  }
-  section .container {
-    box-sizing: border-box;
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 10px;
-    width: 100%;
-   }
-  section:nth-of-type(1) {
+   #welcome {
     color: #fff;
     height: 100vh;
     /* height: 53px; */
     padding: 0 10px;
   }
-  section:nth-of-type(1) .highlight {
+   #welcome .highlight {
     font-family: "Raleway-semibold";
   }
-  section:nth-of-type(1) .text {
+   #welcome .text {
     font-size: 16pt;
     line-height: 20pt;
     margin: 0 0 20px 0;
     pointer-events: none;
     z-index: 1;
   }
-  section:nth-of-type(1) .hexagon {
+   #welcome .hexagon {
     transition: transform 0.9s ease-in-out;
   }
-  section:nth-of-type(1) .hexagon:hover {
+   #welcome .hexagon:hover {
     transform: rotate(540deg);
 
   }
 
-  section:nth-of-type(1) .button {
+   #welcome .button {
     margin-bottom: 53px;
     padding: 12px 30px 12px 15px;
     position: relative;
 
   }
 
-  section:nth-of-type(1) .button .mdi {
+   #welcome .button .mdi {
     position: relative;
     bottom: 10px;
     left: 0px;
@@ -144,39 +130,39 @@ section {
     transition: left 0.5s;
   }
 
-  section:nth-of-type(1) .button .view {
+   #welcome .button .view {
     transition: font-size 0.5s;
 
   }
   
-  section:nth-of-type(1) .button:hover .mdi {
+   #welcome .button:hover .mdi {
     left: 25px;
     transform: scale(1.5);
 
   }
 
-  section:nth-of-type(1) .button:hover .view {
+   #welcome .button:hover .view {
     font-size: 24px;
 
   } 
 
    @media screen and (min-width: 600px) {
-    section:nth-of-type(1) .text {
+     #welcome .text {
       font-size: 32pt;
       line-height: 36pt;
     }
-    section:nth-of-type(1) .button { /*con este, cambio las dimensiones del boton del Welcome cuando al pantalla es de más de 600px de ancho*/
+     #welcome .button { 
       padding: 12px 35px 12px 20px;
     }
-    section:nth-of-type(1) .button .mdi {
+     #welcome .button .mdi {
       top: 0px;
     }
   } 
 
   @media screen and (min-width: 960px) {
-    .button {
+    /* .button {
       font-size: 16pt;
-    }
+    } */
     .canvas {
       background: #252934;
     }

@@ -1,0 +1,163 @@
+#portfolio {
+    background: #f5f5f5;
+    padding: 20px 0 0px 0; 
+
+  }
+  #portfolio .container {
+    padding: 0;
+  }
+  #portfolio .filter-wrap {
+    position: relative;
+    white-space: nowrap;
+  }
+  #portfolio .filter {
+    cursor: pointer;
+    font-size: 6pt;
+    font-weight: 600;
+    padding: 0 20px;
+    transition: background-color 0.5s;
+  } 
+  #portfolio .float-bar {
+    bottom: 0;
+    left: 30px;
+    position: absolute;
+    top: 0;
+    background: #e31b6d;
+    border-radius: 1px;
+    height: 25px;
+    margin: auto 0;
+    overflow: hidden;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+  }
+  #portfolio .float-bar .row {
+    bottom: 0;
+    left: -30px;
+    position: absolute;
+    top: 0;
+    margin: auto 0;
+    transition: left 0.5s ease-in-out;
+  }
+  #portfolio .float-bar .row .filter {
+    color: #fff;
+  }
+  #portfolio .text {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  #portfolio #gallery {
+    margin: 20px 0;
+  }
+  #portfolio #gallery .text,
+  #portfolio #gallery .button {
+    color: #1b242f;
+    opacity: 0;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+  }
+  
+  #portfolio #gallery .text .bold,
+  #portfolio #gallery .button .bold {
+    font-size: 16pt;
+  }
+  #portfolio #gallery .button {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    border: 2px solid #e31b6d;
+    font-size: 13pt;
+    margin: 0 auto;
+    padding: 7px 0;
+    width: 170px;
+  }
+  #portfolio #gallery .mix {
+    display: none;
+    position: relative;
+  }
+  #portfolio #gallery .mix .waypoint {
+    background: #fff;
+  }
+  #portfolio #gallery .mix .button:hover {
+    background: #e31b6d;
+    color: #fff;
+  }
+  #portfolio #gallery .mix:nth-child(1) .card {
+    background: url("../img/thumb-1.jpg") center center/cover;
+  }
+  #portfolio #gallery .mix:nth-child(2) .card {
+    background: url("../img/thumb-2.jpg") center center/cover;
+  }
+  #portfolio #gallery .mix:nth-child(3) .card {
+    background: url("../img/thumb-3.jpg") center center/cover;
+  }
+  #portfolio #gallery .mix:nth-child(4) .card {
+    background: url("../img/thumb-4.jpg") center center/cover;
+  }
+  #portfolio #gallery .mix:nth-child(5) .card {
+    background: url("../img/thumb-5.jpg") center center/cover;
+  }
+  #portfolio #gallery .mix:nth-child(6) .card {
+    background: url("../img/thumb-6.jpg") center center/cover;
+  }
+  #portfolio #gallery .mix:nth-child(7) .card {
+    background: url("../img/thumb-7.jpg") center center/cover;
+  }
+  #portfolio #gallery .mix:nth-child(8) .card {
+    background: url("../img/thumb-8.jpg") center center/cover;
+  }
+  #portfolio #gallery .mix:nth-child(9) .card {
+    background: url("../img/thumb-9.jpg") center center/cover;
+  }
+
+  
+  #portfolio #gallery .mix .card {
+    height: 240px;
+    max-width: 100%;
+    transition: opacity 0.5s;
+    width: calc(50vw - 8px);
+  }
+  #portfolio #gallery .mix:hover .card {
+    opacity: 0;
+  }
+  #portfolio #gallery .mix:hover .text {
+    cursor: default;
+    opacity: 1;
+    top: 24%;
+  }
+  #portfolio #gallery .mix:hover .button {
+    bottom: 24%;
+    opacity: 1;
+  }
+@media screen and (max-width: 400px) {
+    #portfolio #gallery .mix .card {
+      width: 100vw;
+    }
+  }
+@media screen and (min-width: 600px) {
+    #portfolio .filter {
+        font-size: 11pt;
+        margin: 0 15px;
+        padding: 0 30px;
+      }
+      #portfolio .float-bar {
+        height: 30px;
+      }
+      #portfolio #gallery .mix .card {
+        height: 300px;
+      }
+
+}
+@media screen and (min-width: 960px) {
+    #portfolio #gallery .mix .card {
+        width: 390px;
+      }
+      #portfolio .filter {
+        font-size: 13pt;
+        margin: 0 25px;
+        padding: 0 40px;
+      }
+}
