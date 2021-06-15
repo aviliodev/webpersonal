@@ -9,7 +9,7 @@ export default function ProjectItem({
   }) {
     return (
     <div  className="mix react" data-my-order="1">
-        <div className="card"></div>
+        <img src={img} alt="projectimg" className="card"/>
         <div className="text">
             <div className="bold">{title}</div>
             <span className="highlight">{desc}</span>
