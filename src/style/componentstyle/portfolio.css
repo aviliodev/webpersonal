@@ -75,7 +75,7 @@
     width: 170px;
   }
   #portfolio #gallery .mix {
-    display: none;
+    /* display: none; */
     position: relative;
   }
   #portfolio #gallery .mix .waypoint {
@@ -85,7 +85,7 @@
     background: #e31b6d;
     color: #fff;
   }
-  #portfolio #gallery .mix:nth-child(1) .card {
+  /* #portfolio #gallery .mix:nth-child(1) .card {
     background: url("../img/thumb-1.jpg") center center/cover;
   }
   #portfolio #gallery .mix:nth-child(2) .card {
@@ -111,7 +111,7 @@
   }
   #portfolio #gallery .mix:nth-child(9) .card {
     background: url("../img/thumb-9.jpg") center center/cover;
-  }
+  } */
 
   
   #portfolio #gallery .mix .card {
