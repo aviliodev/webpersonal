@@ -1,5 +1,5 @@
 import React from 'react'
-// import '../style/componentstyle/menu.css'
+import '../style/componentstyle/menu.css'
 
 
 const Welcome = () => (

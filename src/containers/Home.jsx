@@ -12,9 +12,9 @@ import Blog from '../components/Blog'
 const Home = () => (
     <>
         <Menu />
-        {/* <About /> */}
+        <About />
         <Portfolio />
-        {/* <Blog /> */}
+        <Blog />
     </>
 
 )
