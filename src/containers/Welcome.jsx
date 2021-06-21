@@ -16,13 +16,13 @@ const Welcome = () => (
                 I'm a full-stack web developer.
             </div>
 
-            <Link to="Home">
+            <Link to="About">
                 <div className="button page-link" dest="about">
                     <a className="view">View my work</a> 
                     <i className="mdi mdi-arrow-right"></i>
                 </div>
             </Link>
-        </div>  
+        </div> 
     </section>
  
 )

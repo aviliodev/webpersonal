@@ -36,17 +36,17 @@ nav .link-wrap {
 nav .link-wrap.visible {
   height: 220px;
 }
-nav .link-wrap div {
+nav .link-wrap li {
   cursor: pointer;
   font-size: 12pt;
   padding: 12px 20px;
   text-transform: uppercase;
   transition: color 0.5s;
 }
-nav .link-wrap div:first-child {
+nav .link-wrap li:first-child {
   padding: 25px 20px 12px 20px;
 }
-nav .link-wrap div:hover {
+nav .link-wrap li:hover {
   color: #e31b6d;
 }
 nav .mdi-menu {
@@ -86,13 +86,13 @@ nav .active {
   nav .link-wrap .visible {
     height: initial;
   }
-  nav .link-wrap div {
+  nav .link-wrap li {
     display: inline; /*para que menu se mire como fila y no como columna */
     font-size: initial;
     margin: 0 20px;
     padding: initial;
   }
-  nav .link-wrap div:first-child {
+  nav .link-wrap li:first-child {
     padding: 0;
   }
   nav .mdi-menu {

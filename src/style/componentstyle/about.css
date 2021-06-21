@@ -27,17 +27,13 @@
     width: inherit;
   }
 
-  #about {
-    padding: 100px 0 130px 0;
-  }
-
-#about .label-wrap .label {
+  #about .label-wrap .label {
     margin: 20px 0 10px 0;
   }
-  #about .bullet-wrap {
+   #about .bullet-wrap {
     height: 200px;
-    justify-content: flex-start;
-    padding: 0 7px;
+    /* justify-content: flex-start; */
+    /* padding: 0 7px; */
   }
   #about .highlight {
     color: #009ada;
@@ -52,6 +48,7 @@
   }
   #about .skills-wrapper .me {
     height: 200px;
+    border-radius: 50%;
   }
   #about .skills-wrapper .label {
     margin: 20px 0 15px 0;
@@ -65,13 +62,13 @@
     top: 20px;
     z-index: 1;
   }
-  #about .bars-wrap {
+  #about .bars-wrap { /*esto controla posicion las barras*/
     margin: 50px auto 0 auto;
     max-width: 90%;
     width: calc(100% - 15px);
   }
 
-  #about .bar {
+  #about .bar { /* visualizacion de las barras*/
     align-items: flex-end;
     background-color: #eee;
     color: #666;
@@ -112,22 +109,24 @@
     padding: 0 15px 0 0;
     z-index: 1;
   }
+  #about .flex-50-gt-sm {
+    display: block;
+  }
 
   @media screen and (min-width: 600px) {
-    #about {
-      padding: 100px 0 130px 0; 
-    }
+
     #about .label-wrap .label {
         margin: 15px 0 5px 0;
       }
-      #about .label-wrap > div {
-        padding: 0 15px;
-      }
+
       #about .bullet-wrap {
-        height: 230px;
+        height: 150px;
+        width: 56px;
+        margin: 0 45px 0 45px;
+
       }
       #about .skills-wrapper > .flex:first-child {
-        padding: 0 50px 0 50px;
+        padding: 15px 50px 0 50px;
       }
       #about .skills-wrapper .me {
         height: 250px;
@@ -144,8 +143,15 @@
         width: 110px;
       }
       #about .hexagon i {
-        font-size: 40pt;
+        font-size: 36pt;
       }
+      .hex-wrap { /*tamaño del hexagono*/
+        height: 85px;
+        width: 85px;
+      }
+      .flex.row-gt-sm {
+        flex-direction: row; /*Esto pone en posicion de filas los iconos de about*/
+      }            
   }  
 
   @media screen and (min-width: 960px) {
@@ -153,7 +159,7 @@
     margin: 0 0 0 0;
   }
   #about .skills-wrapper {
-    margin: 50px 0 0 0;
+    margin: 15px 0 0 0;
   }
   #about .skills-wrapper .me {
     margin: 0;
@@ -162,8 +168,25 @@
     max-width: 90%;
   }
   #about .bullet-wrap {
-    height: intial;
-    margin: 0;
-    padding: 0 10px;
+    height: initial;
+    width: 56px;
+    margin: 0 60px 0 60px;
   }
+  #about .hexagon i {
+    font-size: 40pt;
+  }
+
+  .flex-50-gt-sm {
+    box-sizing: border-box;
+    -webkit-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+    max-height: 100%;
+    max-width: 50%;
+  }
+
+  .hex-wrap { /*tamaño del hexagono*/
+    height: 95px;
+    width: 95px;
+  } 
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import '../style/componentstyle/menu.css'
 
 
@@ -6,15 +7,39 @@ const Welcome = () => (
 
     <section id="menu" className="flex height-fix">
         <nav className="flex">
-            <div className="link-wrap">
-                <div className="page-link" dest="home">home</div>
-                <div className="active page-link" dest="about">about</div>
-                <div className="page-link" dest="portfolio">portfolio</div>
-                <div className="page-link" dest="blog">blog</div>
-                <div className="page-link" dest="contact">contact</div>
-            </div>
+            <ul className="link-wrap">
+                <li className="page-link">    
+                <NavLink
+                    to="/about"
+                    role="button"
+                    tabIndex={0}
+                >
+                    About
+                </NavLink>
+                </li>
+                <li className="page-link">
+                <NavLink
+                    to="/projects"
+                    role="button"
+                    tabIndex={0}
+                >
+                    Projects
+                </NavLink>
+                </li>
+                <li className="page-link">
+                <NavLink
+                    to="/contact"
+                    role="button"
+                    tabIndex={0}
+                >
+                    Contact
+                </NavLink>
+                </li>
+            </ul>
             <i className="mdi mdi-menu"></i>
         </nav>
+
+
     </section>    
 )
 

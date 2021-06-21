@@ -1,4 +1,6 @@
 import React from 'react'
+import { BsFillPipFill, BsFillTerminalFill, BsKanbanFill } from "react-icons/bs";
+import { FaChartBar, FaLaptop, FaLaptopCode } from "react-icons/fa";
 import '../style/componentstyle/about.css'
 
 const About = () => {
@@ -31,57 +33,51 @@ const About = () => {
             <div className="flex row-gt-sm">
                 <div className="flex bullet-wrap ">
                     <div className="hex-wrap way flip-in-x">
-                    <div className="hexagon">
-                        <i className="mdi mdi-speedometer"></i>
-                    </div>
+                        <div className="hexagon">
+                            <i className="mdi">
+                                <FaLaptop/>
+                            </i>
+                        </div>
                     </div>
                     <div className="way fade-in">
-                    <div className="label bold">Fast</div>
-                    <div>
+                    <div className="label bold">Front End</div>
+                    {/* <div>
                         Fast load times and lag free interaction, my highest
                         priority.
-                    </div>
+                    </div> */}
                     </div>
                 </div>
 
                 <div className="flex bullet-wrap ">
                     <div className="hex-wrap way hex1 flip-in-x ">
                         <div className="hexagon">
-                            <i className="mdi mdi-cellphone-link"></i>
+                            <i className="mdi ">
+                            <FaLaptopCode/>
+                            </i>
                         </div>
                     </div>
                     <div className="way hex1 fade-in ">
-                    <div className="label bold">Responsive</div>
-                    <div>My layouts will work on any device, big or small.</div>
+                    <div className="label bold">Back End</div>
+                    {/* <div>My layouts will work on any device, big or small.</div> */}
                     </div>
                 </div>
             </div>
-
             <div className="flex row-gt-sm">
-                <div className="flex bullet-wrap ">
-                    <div className="hex-wrap way flip-in-x hex2">
-                        <div className="hexagon">
-                            <i className="mdi mdi-lightbulb-outline"></i>
-                        </div>
-                    </div>
-                    <div className="waypoint fade-in hex2">
-                        <div className="label bold">Intuitive</div>
-                        <div>Strong preference for easy to use, intuitive UX/UI.</div>
-                    </div>
-                </div>
 
                 <div className="flex bullet-wrap ">
                     <div className="hex-wrap way flip-in-x hex3">
                         <div className="hexagon">
-                            <i className="mdi mdi-rocket"></i>
+                            <i className="mdi">
+                                <FaChartBar/>
+                            </i>
                         </div>
                     </div>
                     <div className="way fade-in hex3">
-                        <div className="label bold">Dynamic</div>
-                        <div>
+                        <div className="label bold">Data Analytics</div>
+                        {/* <div>
                             Websites don't have to be static, I love making pages come
                             to life.
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
@@ -111,7 +107,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="flex flex-50-gt-sm way bars-wrap slide-in-right" >
+            {/* <div className="flex flex-50-gt-sm way bars-wrap slide-in-right" >
             <div className="bar flex">
                 <div className="bar fill" style={divStyle1}>
                     <div className="tag bold flex">CSS</div>
@@ -181,7 +177,7 @@ const About = () => {
                 </div>
                 <span>50%</span>
             </div>
-            </div>
+            </div> */}
         </div>
         </div>
 
