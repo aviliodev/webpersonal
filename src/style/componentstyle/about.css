@@ -177,12 +177,14 @@
   }
 
   .flex-50-gt-sm {
-    box-sizing: border-box;
+    /* box-sizing: border-box;
     -webkit-flex: 1 1 50%;
     -ms-flex: 1 1 50%;
     flex: 1 1 50%;
     max-height: 100%;
-    max-width: 50%;
+    max-width: 50%; */
+    display: inline-block;
+
   }
 
   .hex-wrap { /*tamaño del hexagono*/
